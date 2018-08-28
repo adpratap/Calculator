@@ -21,7 +21,9 @@
         android:text="@string/add"
         android:textColor="#fef499"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="63dp" />
 
     <Button
         android:id="@+id/btnsub"
@@ -33,7 +35,8 @@
         android:text="@string/sub"
         android:textColor="#445566"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_alignRight="@+id/et2" />
 
     <Button
         android:id="@+id/btnmul"
@@ -47,7 +50,7 @@
         android:textColor="#662"
         android:textSize="30sp"
         android:textStyle="bold"
-        />
+        android:layout_alignLeft="@+id/btnadd" />
 
     <Button
         android:id="@+id/btndiv"
@@ -59,7 +62,8 @@
         android:textColor="@android:color/holo_red_dark"
         android:textStyle="bold"
         android:textSize="30sp"
-        android:background="#f2f2f2"/>
+        android:background="#f2f2f2"
+        android:layout_alignLeft="@+id/btnsub" />
 
     <EditText
         android:id="@+id/et2"
@@ -69,7 +73,8 @@
         android:layout_alignStart="@+id/et3"
         android:layout_marginTop="141dp"
         android:ems="10"
-        android:inputType="numberDecimal" />
+        android:inputType="numberDecimal"
+        android:layout_alignLeft="@+id/et3" />
 
     <EditText
         android:id="@+id/et1"
@@ -80,7 +85,8 @@
         android:layout_marginTop="75dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        tools:ignore="LabelFor" />
+        tools:ignore="LabelFor"
+        android:layout_alignLeft="@+id/et2" />
 
     <TextView
         android:id="@+id/textView"
@@ -91,7 +97,8 @@
         android:text="@string/n1"
         android:textColor="#657"
         android:textStyle="bold"
-        android:textSize="20sp"/>
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/textView2" />
 
     <TextView
         android:id="@+id/textView2"
@@ -104,7 +111,8 @@
         android:textColor="#753"
         android:textStyle="bold"
         android:textSize="20sp"
-        />
+        android:layout_marginRight="-79dp"
+        android:layout_toLeftOf="@+id/btnadd" />
 
     <TextView
         android:id="@+id/textView3"
@@ -118,7 +126,8 @@
         android:textSize="20sp"
         android:textStyle="bold"
         android:textAllCaps="true"
-        />
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="19dp" />
 
     <EditText
         android:id="@+id/et3"
@@ -130,7 +139,9 @@
         android:layout_marginTop="213dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        tools:ignore="LabelFor,RelativeOverlap" />
+        tools:ignore="LabelFor,RelativeOverlap"
+        android:layout_marginRight="63dp"
+        android:layout_alignParentRight="true" />
 
     <TextView
         android:id="@+id/textView5"
